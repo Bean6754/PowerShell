@@ -8,7 +8,7 @@ if (Test-Path ($i.fullname + "\xoTKfwzqSL")) {
   $filename > xoTKfwzqSL
 }
 
-Write-Host "Logging to file $filename'
+Write-Host "Logging to file:' $filename
 
 while ($true) {
   sleep 10
