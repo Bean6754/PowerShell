@@ -110,6 +110,17 @@ Get-AppxPackage *bingweather* | Remove-AppxPackage
 
 # Personal collection of commands.
 
+# Bubble Witch 3 Saga.
+Get-AppxPackage *bubblewitch* | Remove-AppxPackage
+
+# Candy Crush.
+Get-AppxPackage *candycrush* | Remove-AppxPackage
+
+# Dolby Access.
+Get-AppxPackage *dolbyaccess* | Remove-AppxPackage
+
+# Disney Magic Kingdoms.
 Get-AppxPackage *disneymagickingdoms* | Remove-AppxPackage
 
+# March of Empires.
 Get-AppxPackage *marchofempires* | Remove-AppxPackage
