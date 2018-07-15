@@ -105,3 +105,8 @@ Get-AppxPackage *bingweather* | Remove-AppxPackage
 
 # Uninstall Xbox:
 # Get-AppxPackage *xboxapp* | Remove-AppxPackage
+
+
+Get-AppxPackage *disneymagickingdoms* | Remove-AppxPackage
+
+Get-AppxPackage *marchofempires* | Remove-AppxPackage
