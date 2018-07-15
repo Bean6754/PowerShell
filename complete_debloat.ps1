@@ -21,4 +21,4 @@ exit
 
 # Warning! This script will remove all Appx-Packages (UWP) from your system.
 
-Get-AppxPackage | Remove-AppxPackage
+Get-AppxPackage –Allusers | Remove-AppxPackage
