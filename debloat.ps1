@@ -107,6 +107,9 @@ Get-AppxPackage *bingweather* | Remove-AppxPackage
 # Get-AppxPackage *xboxapp* | Remove-AppxPackage
 
 
+
+# Personal collection of commands.
+
 Get-AppxPackage *disneymagickingdoms* | Remove-AppxPackage
 
 Get-AppxPackage *marchofempires* | Remove-AppxPackage
