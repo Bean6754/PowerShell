@@ -22,3 +22,6 @@ exit
 # Warning! This script will remove all Appx-Packages (UWP) from your system.
 
 Get-AppxPackage –Allusers | Remove-AppxPackage
+
+# Reinstall Windows Store.
+Get-AppXPackage *WindowsStore* -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"} 
