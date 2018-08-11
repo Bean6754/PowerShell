@@ -124,3 +124,18 @@ Get-AppxPackage *disneymagickingdoms* | Remove-AppxPackage
 
 # March of Empires.
 Get-AppxPackage *marchofempires* | Remove-AppxPackage
+
+# Cooking Fever.
+Get-AppxPackage *cookingfever* | Remove-AppxPackage
+
+# Dragon Mania.
+Get-AppxPackage *dragonmania* | Remove-AppxPackage
+
+# Hidden City.
+Get-AppxPackage *hiddencity* | Remove-AppxPackage
+
+# Minecraft.
+Get-AppxPackage *minecraft* | Remove-AppxPackage
+
+# Maps.
+Get-AppxPackage *maps* | Remove-AppxPackage
