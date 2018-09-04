@@ -1,4 +1,4 @@
 # Powershell
 Powershell scripts
 
-## I personally run the `3rd_party_debloat.ps1` (plus removal of Minecraft) script on all of my Windows 10 computers.
+## I personally run the `complete_debloat.ps1` script on all of my Windows 10 computers, then I install Skype and Windows Calculator from the Windows Store.
