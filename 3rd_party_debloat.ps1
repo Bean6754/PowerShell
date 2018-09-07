@@ -34,5 +34,4 @@ Get-AppxPackage *hiddencity* | Remove-AppxPackage
 Get-AppxPackage *marchofempires* | Remove-AppxPackage
 
 # Minecraft (not technically third-party anymore).
-# Get-AppxPackage *minecraft* | Remove-AppxPackage
-
+Get-AppxPackage *minecraft* | Remove-AppxPackage
