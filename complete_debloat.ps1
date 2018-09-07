@@ -24,4 +24,8 @@ exit
 Get-AppxPackage –Allusers | Remove-AppxPackage
 
 # Reinstall Windows Store.
-Get-AppXPackage *WindowsStore* -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"} 
+Get-AppXPackage *WindowsStore* -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register "$($_.InstallLocation)\AppXManifest.xml"}
+
+Clear-Host
+Write-Host "Remember to install Windows Calculator and Skype from the Windows Store."
+pause
