@@ -2,8 +2,8 @@
 
 What the script does:
 
-(images/application-experience.png)
+![Application Experience](images/application-experience.png "Application Experience")
 
-(images/autochk.png)
+![Autochk](images/autochk.png "Autochk")
 
-(images/spyware.png)
+![Spyware](images/spyware.png "Spyware")
