@@ -2,7 +2,7 @@
 
 What the script does:
 
-Disables Microsoft `Compatibility Appraiser`, `ProgramDataUpdater` and `StartupAppTask`.
+Disables `Microsoft Compatibility Appraiser`, `ProgramDataUpdater` and `StartupAppTask`.
 
 ![Application Experience](images/application-experience.png "Application Experience")
 
