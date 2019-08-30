@@ -24,4 +24,5 @@ Disable-ScheduledTask -TaskPath "\Microsoft\Windows\Autochk\" -TaskName "Proxy"
 
 # Microsoft spyware.
 Disable-ScheduledTask -TaskPath "\Microsoft\Windows\Customer Experience Improvement Program\" -TaskName "Consolidator"
+Disable-ScheduledTask -TaskPath "\Microsoft\Windows\Customer Experience Improvement Program\" -TaskName "KernelCeipTask"
 Disable-ScheduledTask -TaskPath "\Microsoft\Windows\Customer Experience Improvement Program\" -TaskName "UsbCeip"
