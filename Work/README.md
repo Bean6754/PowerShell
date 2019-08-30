@@ -12,6 +12,6 @@ Disables `Proxy`.
 
 ![Autochk](images/autochk.png "Autochk")
 
-Disables `Consolidator` and `UsbCeip`.
+Disables `Consolidator`, `KernelCeipTask` (only found in Windows 7) and `UsbCeip`.
 
 ![Spyware](images/spyware.png "Spyware")
