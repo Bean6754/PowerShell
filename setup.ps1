@@ -125,5 +125,3 @@ Set-ItemProperty -Path 'HKCR:\CLSID{679f85cb-0220-4080-b29b-5540cc05aab6}\ShellF
 # Set Explorer to This PC instead of QuickAccess.
 New-Item -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced' -Name "LaunchTo" -Force
 Set-ItemProperty -Path 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\Advanced' -Name "LaunchTo" -Value 1
-
-.\programs.ps1
