@@ -1,0 +1,12 @@
+Windows Registry Editor Version 5.00
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\Policies\Microsoft\FVE]
+"EncryptionMethodWithXtsOs"=dword:00000007
+"EncryptionMethodWithXtsFdv"=dword:00000007
+"EncryptionMethodWithXtsRdv"=dword:00000007
+"UseAdvancedStartup"=dword:00000001
+"EnableBDEWithNoTPM"=dword:00000001
+"UseTPM"=dword:00000002
+"UseTPMPIN"=dword:00000002
+"UseTPMKey"=dword:00000002
+"UseTPMKeyPIN"=dword:00000002
