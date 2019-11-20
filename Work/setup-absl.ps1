@@ -39,6 +39,18 @@ else
 }
 Remove-Variable op
 
+# Set pagefile to 8192 MB.
+$computersys = Get-WmiObject Win32_ComputerSystem -EnableAllPrivileges;
+$computersys.AutomaticManagedPagefile = $False;
+$computersys.Put();
+$pagefile = Get-WmiObject -Query "Select * From Win32_PageFileSetting Where Name like '%pagefile.sys'";
+$pagefile.InitialSize = 8192;
+$pagefile.MaximumSize = 8192;
+$pagefile.Put();
+
+Remove-Variable pagefile
+Remove-Variable computersys
+
 $snVar1 = (Get-CimInstance win32_bios | Format-List serialnumber) | Out-String
 $snVar2 = ($snVar1 -Replace "serialnumber : " -Replace "")
 $snVar3 = ($snVar2 -Replace "`t|`n|`r" -Replace ", ")
@@ -70,6 +82,11 @@ Start-Process "cmd" -ArgumentList "$command" -Verb runAs -Wait
 Remove-Variable command
 
 
+# Set UK keyboard as default and only layout.
+# Set-WinUserLanguageList -LanguageList en-US, en-GB -Force (for multiple keyboard layouts)
+Set-WinUserLanguageList -LanguageList en-GB -Force
+
+
 # Set Timezone.
 Set-TimeZone "GMT Standard Time"
 # Get-TimeZone -ListAvailable
@@ -79,6 +96,7 @@ Start-Process "w32tm.exe" -ArgumentList ("/config", "/update") -Verb runAs -Wait
 Start-Process "w32tm.exe" -ArgumentList "/resync" -Verb runAs -Wait
 
 .\Fix-FireEye.ps1
+Visual-C-Runtimes-All-in-One-Sep-2019\install_all.bat
 
 # Install Programs.
 Start-Process -FilePath ".\ChromeStandaloneSetup64"
