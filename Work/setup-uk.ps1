@@ -101,6 +101,8 @@ Visual-C-Runtimes-All-in-One-Sep-2019\install_all.bat
 Start-Process -FilePath ".\ChromeStandaloneSetup64"
 Start-Process -FilePath ".\7z1900-x64.exe" -Wait
 Start-Process -FilePath ".\vlc-3.0.8-win64.exe" -Wait
+Start-Process -FilePath ".\Greenshot-INSTALLER-1.2.10.6-RELEASE.exe" -Wait
+# Start-Process -FilePath ".\notepad" -Wait
 Start-Process ".\AdobeAcroCleaner_DC2015.exe" -ArgumentList ("/silent", "/product=0") -Verb runAs -Wait
 Start-Process ".\AdobeAcroCleaner_DC2015.exe" -ArgumentList ("/silent", "/product=1") -Verb runAs -Wait
 Start-Process -FilePath ".\AcroRdrDC1901220034_en_US" -Wait
