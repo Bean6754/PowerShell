@@ -1,4 +1,4 @@
-## This script would not be made possible if it wasn't for the article over at "https://www.herlitz.io/2016/09/13/disable-ipv6-on-all-ethernet-adapters-using-powershell/".
+## This script would not be made possible if it wasn't for the articles over at "https://www.herlitz.io/2016/09/13/disable-ipv6-on-all-ethernet-adapters-using-powershell/" and "https://4sysops.com/archives/disable-ipv6-in-windows/".
 
 $currentPrincipal = New-Object Security.Principal.WindowsPrincipal([Security.Principal.WindowsIdentity]::GetCurrent())
 $currentPrincipal.IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
@@ -23,3 +23,6 @@ Get-NetAdapter | foreach { Disable-NetAdapterBinding -InterfaceAlias $_.Name -Co
 
 # Check with.
 # Get-NetAdapter | foreach { Get-NetAdapterBinding -InterfaceAlias $_.Name -ComponentID ms_tcpip6 }
+
+# Disable IPv6 globally. This is NOT RECOMMENDED as some Services may depend on the local IPv6 stack even if it is not in use by the network-adapters.
+# New-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip6\Parameters\" -Name "DisabledComponents" -Type DWord -Value 255
