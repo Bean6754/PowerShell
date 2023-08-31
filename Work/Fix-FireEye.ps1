@@ -24,6 +24,7 @@ Disable-ScheduledTask -TaskPath "\" -TaskName "GoogleUpdateTaskMachineCore"
 Disable-ScheduledTask -TaskPath "\" -TaskName "GoogleUpdateTaskMachineUA"
 Disable-ScheduledTask -TaskPath "\" -TaskName "MicrosoftEdgeUpdateTaskMachineCore"
 Disable-ScheduledTask -TaskPath "\" -TaskName "MicrosoftEdgeUpdateTaskMachineUA"
+Disable-ScheduledTask -TaskPath "\" -TaskName "update-sys"
 
 # Application Experience - Telemetry.
 Disable-ScheduledTask -TaskPath "\Microsoft\Windows\Application Experience\" -TaskName "Microsoft Compatibility Appraiser"
