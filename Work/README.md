@@ -6,6 +6,10 @@ Checks if it is ran with Administrator rights otherwise it exits.
 
 _Task Scheduler_
 
+Disables `Office ClickToRun Service Monitor`.
+
+![Office ClickToRun Service Monitor](/images/office.png "Office ClickToRun Service Monitor")
+
 Disables `MareBackup`, `Microsoft Compatibility Appraiser`, `PcaPatchDbTask`, `ProgramDataUpdater` and `StartupAppTask`.
 
 ![Application Experience](images/application-experience.png "Application Experience")
