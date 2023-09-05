@@ -27,6 +27,7 @@ Disable-ScheduledTask -TaskPath "\" -TaskName "MicrosoftEdgeUpdateTaskMachineUA"
 Disable-ScheduledTask -TaskPath "\" -TaskName "update-sys"
 
 # Application Experience - Telemetry.
+Disable-ScheduledTask -TaskPath "\Microsoft\Windows\Application Experience\" -TaskName "MareBackup"
 Disable-ScheduledTask -TaskPath "\Microsoft\Windows\Application Experience\" -TaskName "Microsoft Compatibility Appraiser"
 Disable-ScheduledTask -TaskPath "\Microsoft\Windows\Application Experience\" -TaskName "PcaPatchDbTask"
 Disable-ScheduledTask -TaskPath "\Microsoft\Windows\Application Experience\" -TaskName "ProgramDataUpdater"
