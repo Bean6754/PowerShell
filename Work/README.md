@@ -6,7 +6,7 @@ Checks if it is ran with Administrator rights otherwise it exits.
 
 _Task Scheduler_
 
-Disables `Microsoft Compatibility Appraiser`, `ProgramDataUpdater` and `StartupAppTask`.
+Disables `MareBackup`, `Microsoft Compatibility Appraiser`, `PcaPatchDbTask`, `ProgramDataUpdater` and `StartupAppTask`.
 
 ![Application Experience](images/application-experience.png "Application Experience")
 
