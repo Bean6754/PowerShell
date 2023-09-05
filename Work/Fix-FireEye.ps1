@@ -26,6 +26,9 @@ Disable-ScheduledTask -TaskPath "\" -TaskName "MicrosoftEdgeUpdateTaskMachineCor
 Disable-ScheduledTask -TaskPath "\" -TaskName "MicrosoftEdgeUpdateTaskMachineUA"
 Disable-ScheduledTask -TaskPath "\" -TaskName "update-sys"
 
+# Office - ClickToRun Telemetry.
+Disable-ScheduledTask -TaskPath "\Microsoft\Office\" -TaskName "Office ClickToRun Service Monitor"
+
 # Application Experience - Telemetry.
 Disable-ScheduledTask -TaskPath "\Microsoft\Windows\Application Experience\" -TaskName "MareBackup"
 Disable-ScheduledTask -TaskPath "\Microsoft\Windows\Application Experience\" -TaskName "Microsoft Compatibility Appraiser"
