@@ -6,7 +6,7 @@ Checks if it is ran with Administrator rights otherwise it exits.
 
 _Task Scheduler_
 
-Disables `Office ClickToRun Service Monitor`.
+Disables `Office ClickToRun Service Monitor`, `OfficeTelemetryAgentFallBack2016` and `OfficeTelemetryAgentLogOn2016` .
 
 ![Office ClickToRun Service Monitor](/images/office.png "Office ClickToRun Service Monitor")
 
