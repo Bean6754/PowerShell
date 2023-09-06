@@ -8,7 +8,7 @@ _Task Scheduler_
 
 Disables `Office ClickToRun Service Monitor`, `OfficeTelemetryAgentFallBack2016` and `OfficeTelemetryAgentLogOn2016` .
 
-![Office ClickToRun Service Monitor](/images/office.png "Office ClickToRun Service Monitor")
+![Office ClickToRun Service Monitor](images/office.png "Office ClickToRun Service Monitor")
 
 Disables `MareBackup`, `Microsoft Compatibility Appraiser`, `PcaPatchDbTask`, `ProgramDataUpdater` and `StartupAppTask`.
 
