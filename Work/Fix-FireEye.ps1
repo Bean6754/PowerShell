@@ -28,6 +28,8 @@ Disable-ScheduledTask -TaskPath "\" -TaskName "update-sys"
 
 # Office - ClickToRun Telemetry.
 Disable-ScheduledTask -TaskPath "\Microsoft\Office\" -TaskName "Office ClickToRun Service Monitor"
+Disable-ScheduledTask -TaskPath "\Microsoft\Office\" -TaskName "OfficeTelemetryAgentFallBack2016"
+Disable-ScheduledTask -TaskPath "\Microsoft\Office\" -TaskName "OfficeTelemetryAgentLogOn2016"
 
 # Application Experience - Telemetry.
 Disable-ScheduledTask -TaskPath "\Microsoft\Windows\Application Experience\" -TaskName "MareBackup"
